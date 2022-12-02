@@ -36,24 +36,24 @@ export const signupForm = {
     name: {
         ...createFormFieldConfig('Name', 'name', 'text'),
         validationRules: [
-            requiredRule('name'),
-            minLengthRule('name', 3),
-            maxLengthRule('name', 8)
+            requiredRule('Name'),
+            minLengthRule('Name', 3),
+            maxLengthRule('Name', 8)
         ]
     },
     email: {
         ...createFormFieldConfig('Email', 'email', 'email'),
-        validationRules: [requiredRule('email')]
+        validationRules: [requiredRule('Email')]
     },
     password: {
         ...createFormFieldConfig('Password', 'password', 'password'),
-        validationRules: [requiredRule('password')]
+        validationRules: [requiredRule('Password')]
     },
     confirmPassword: {
         ...createFormFieldConfig(
             'Confirm Password',
             'confirmPassword',
-            'password'
+            'Password'
         ),
         validationRules: [passwordMatchRule()]
     }

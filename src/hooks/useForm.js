@@ -15,20 +15,6 @@ const useForm = (formObj) => {
         });
     };
 
-    // const isInputFieldInvalid = useCallback(
-    //     (inputField) => {
-    //         console.log('inputField', inputField);
-    //         for (const rule of inputField.validationRules) {
-    //             if (!rule.validate(inputField.value, form)) {
-    //                 return rule.errorMessage;
-    //             }
-    //         }
-
-    //         return false;
-    //     },
-    //     [form]
-    // );
-
     const updateFieldValidityState = useCallback(
         (inputField) => {
             for (const rule of inputField.validationRules) {
