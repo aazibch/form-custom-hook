@@ -57,15 +57,6 @@ const useForm = (formObj) => {
             // Update validity state
 
             inputObj = updateFieldValidityState(inputObj);
-            // const isInputInvalid = isInputFieldInvalid(inputObj);
-
-            // if (isInputInvalid) {
-            //     inputObj.errorMessage = isInputInvalid;
-            //     inputObj.valid = false;
-            // } else {
-            //     inputObj.errorMessage = '';
-            //     inputObj.valid = true;
-            // }
 
             setForm({ ...form, [event.target.id]: inputObj });
         },
